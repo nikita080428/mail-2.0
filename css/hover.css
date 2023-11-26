@@ -14,3 +14,6 @@
 .search_btn:hover {
     background-color: #236ce9;
 }
+.search_block_info a:hover {
+    color: #3c80ef;
+}
