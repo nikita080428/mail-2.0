@@ -7,3 +7,10 @@
 .hover_white_02:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+/* search _ button */
+
+.search_btn:hover {
+    background-color: #236ce9;
+}

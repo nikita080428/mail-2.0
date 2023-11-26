@@ -1,6 +1,9 @@
 body, p, h1, h2, h3, b, div, header, a {
     margin: 0;
 }
+body {
+    background-color: #19191a;
+}
 /*  */
 .head_menu {
     display: flex; width: 100%;
@@ -15,10 +18,28 @@ body, p, h1, h2, h3, b, div, header, a {
 .head_menu_optional {
 display: flex; align-items: center;
 }
+/* Поисковая строка  */
+.search_block {
+    display: flex; justify-content: center;
+    width: 100%;
+}
+.search_input {
+    width: 80%; height: 5%; padding: 0.5%;
+    border: 3px solid #2775fc; border-radius: 15px;
+}
+.search_btn {
+    border: 3px solid #2775fc; border-radius: 15px;
+    background-color: #2775fc; color: white;
+}
 
 
 
 
+/* Временные стили, для удобства */
 img {
     width: 50px;
+}
+
+body {
+    color: white;
 }
