@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mail.ru 2.0</title>
 
-    <link
-      rel="shortcut icon"
-      href="/assets/image/icon/mail_ru_logo_icon_147267.ico"
-      type="image/x-icon"
-    />
+    <link rel="shortcut icon" href="assets/image/icon/mail_ru_logo_icon_147267.ico" type="image/x-icon">
+
+    <script src="js/index.js" defer></script>
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/hover.css">
@@ -29,7 +27,7 @@
 
     <header class="head_menu">
       <div class="head_menu_main">
-        <p class="hover_white_02"><a href="#">Mail.ru</a></p>
+        <b class="hover_white_02"><a href="#">Mail.ru</a></b>
         <p class="hover_white_02"><a href="#">Почта</a></p>
         <p class="hover_white_02"><a href="#">Облако</a></p>
         <p class="hover_white_02"><a href="#">Одноклассники</a></p>
@@ -41,9 +39,11 @@
           <a href="#">Все проекты ■</a>
         </p>
       </div>
-      <div class="head_menu_optional">
+      <!-- 
+        <div class="head_menu_optional">
         <p class="hover_white_02"><a href="#">почта@mail.ru</a></p>
       </div>
+    -->
     </header>
 
 
@@ -140,43 +140,45 @@
         -->
 
 
-      <section>
-        <div>
+      <section class="search_block_main">
+        <div class="search_block_input">
           <input
             type="search"
-            id="site-search"
+            class="search_input"
             name="q"
             placeholder="Поиск Яндекса"
           />
-          <button>Search</button>
+          <button class="search_btn">Найти</button>
         </div>
-        <div>
+        <div class="search_block_info">
           <p>
             <a href="https://news.mail.ru/currency/src/CBRF/charcode/USD/"
-              ><img src="" alt="" /> 89,12 ↑
+              ><img src="" alt="" /> $ 89,12 ↑
             </a>
             <a href="https://news.mail.ru/currency/src/CBRF/charcode/USD/"
-              ><img src="" alt="" /> 97,77 ↑
+              ><img src="" alt="" /> € 97,77 ↑
             </a>
             <a href="https://news.mail.ru/currency/src/CBRF/charcode/USD/"
-              ><img src="" alt="" /> 81,19 ↑
+              ><img src="" alt="" /> ⛽️ 81,19 ↑
             </a>
             <a href="https://news.mail.ru/society/44150974/?mailday=1"
-              ><img src="" alt="" /> День рождения Деда Мороза
+              ><img src="" alt="" /> 📖 День рождения Деда Мороза
             </a>
-            <span>Сегодня 18 ноября</span>
           </p>
+          <p class="search_block_info_data">Сегодня 18 ноября</p>
         </div>
       </section>
 
-      <article>
-        <div>
-          <img src="" alt="" />
-        </div>
-        <div>
-          <h2>Рекламодатель</h2>
-          <p>Ссылочка.ru реклама 0+ <button>Перейти</button></p>
-        </div>
+      <article class="reclame_block">
+        <section class="reclame_block_content" id="banner_reclame">
+         <div>
+           <img src="assets/image/cat_reklame.jpg" alt="Реклама кота.jpg" />
+         </div>
+         <div class="reclame_block_text">
+           <h2>Рекламодатель</h2>
+           <p>Ссылочка.ru реклама 0+ <a href="https://http.cat/">Перейти</a></p>
+         </div>
+       </section>
       </article>
 
       <section>

@@ -7,3 +7,28 @@
 .hover_white_02:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+
+/* search _ button */
+
+.search_btn:hover {
+    background-color: #236ce9;
+}
+.search_block_info a:hover {
+    color: #3c80ef;
+}
+
+
+.reclame_block_content:hover {
+    color: #236ce9;
+}
+
+.reclame_block_content a {
+    background-color: #3b3b3c;
+    padding: 0.5%; margin-left: 93%;
+    color: white; border-radius: 10px;
+}
+
+.reclame_block_content a:hover {
+background-color: #4c4c4d;
+}

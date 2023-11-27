@@ -1,6 +1,12 @@
 body, p, h1, h2, h3, b, div, header, a {
     margin: 0;
 }
+body {
+    background-color: #19191a; font-family: Helvetica, Arial, sans-serif;
+}
+a {
+    text-decoration: none;
+}
 /*  */
 .head_menu {
     display: flex; width: 100%;
@@ -10,15 +16,74 @@ body, p, h1, h2, h3, b, div, header, a {
 }
 .head_menu_main {
     display: flex; gap: 1%;
-    flex-grow: 1;  
+    flex-grow: 1; font-size: 14px;
 }
 .head_menu_optional {
 display: flex; align-items: center;
 }
+/* Поисковая строка  */
+.search_block_main {
+    display: block; margin: 0 auto;
+    width: 80%;
+}
+
+.search_block_input {
+    display: flex; justify-content: center;
+    
+}
+.search_input {
+    width: 100%; height: 5%; padding: 0.5%;
+    border: 3px solid #2775fc; border-radius: 12px;
+    background-color: #303030;
+}
+.search_btn {
+    border: 3px solid #2775fc; border-radius: 12px;
+    background-color: #2775fc; color: white;
+}
+
+.search_block_info {
+    display: flex; justify-content: space-between; margin-top: 0.75%;
+    width: 99%; align-items: center;
+}
+
+.search_block_info a {
+    color: white;
+}
+.search_block_info_data {
+    color: grey; font-size: 14px;
+}
+/* Баннер рекламы */
+.reclame_block {
+    display: flex; justify-content: center;
+    margin-top: 0.5%;
+}
+.reclame_block_content {
+    display: flex; align-items: center;
+     background-color: #2a2a2b; 
+    width: 80%; border-radius: 20px; 
+}
+.reclame_block_content p {
+    padding-top: 1% ; width: 100%;
+}
+
+.reclame_block_content img {
+    height: 95px; width:275px;
+    border-radius: 15px;
+}
 
 
+.reclame_block_text {
+    width: 100%;
+}
+.reclame_block_text p{
+    padding-top: 1% ; width: 100%;
+}
 
-
+/* Временные стили, для удобства */
 img {
     width: 50px;
+}
+
+body {
+    color: white;
 }
