@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/image/icon/mail_ru_logo_icon_147267.ico" type="image/x-icon">
 
     <script src="js/index.js" defer></script>
+    <script src="js/news.js" defer></script>
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/hover.css">
@@ -48,8 +49,8 @@
 
 
     <!-- Главный контент - #02 -->
-    <main>
-      <!--  Меню боковое
+    <main class="main_container">
+ 
       <aside>
         <header>
           <div>
@@ -137,7 +138,9 @@
           <p><a href="https://help.mail.ru/">Помощь</a></p>
         </footer>
       </aside>
-        -->
+
+
+      <div class="main_container_content">
 
 
       <section class="search_block_main">
@@ -198,8 +201,10 @@
             <li class="news_button" id="pet">Питомцы</li>
           </ul>
         </nav>
+
+        <div class="container">
           <article>
-            <ul>
+            <ul id="news_content">
               <li>Полиция сообщила подробности смерти двоих россиян в Индии</li>
               <li>Финские пограничники применили газ на границе с Россией</li>
               <li>Войска Рф отпраздновали праздник</li>
@@ -216,10 +221,8 @@
               <li>Даниил Медведев кормит кроликов морковкой на пляже: видео</li>
             </ul>
           </article>
-          </div>
 
-
-          <aside>
+          <aside class="container_news_aside">
             <section>
               <h3>Ярославль <span> → </span></h3>
               <p><img src="#" alt="ф" /> Слабый ветер</p>
@@ -247,8 +250,12 @@
               </div>
             </section>
           </aside>
+          </div>
 
 
+        </div>
+
+          
       </section>
 
 
@@ -308,6 +315,9 @@
           <p>Кто сказал, что рыбалка это...</p>
         </div>
 
+
+
+      </div>
       </seciton>
     </main>
 

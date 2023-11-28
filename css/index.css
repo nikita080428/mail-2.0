@@ -7,6 +7,13 @@ body {
 a {
     text-decoration: none;
 }
+
+
+
+/* main_container основной контейнер с двумя частями меню боковое и контент */
+.main_container {
+    display: flex;
+}
 /*  */
 .head_menu {
     display: flex; width: 100%;
@@ -88,6 +95,19 @@ display: flex; align-items: center;
     list-style-type: none;
 }
 
+.container {
+    display: flex; justify-content: center; gap: 15%; align-items: center;
+}
+.container article ul li {
+    list-style-type: none;
+    font-size: 14px;
+    margin-top: 15px ;
+}
+
+/* aside_news менюшка новостей) */
+.container_news_aside {
+    display: flex; flex-direction: column; gap: 50px;
+}
 
 /* Временные стили, для удобства */
 img {
