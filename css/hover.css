@@ -9,7 +9,7 @@
 }
 
 
-/* search _ button */
+/* search _ button поисковые кнопки */
 
 .search_btn:hover {
     background-color: #236ce9;
@@ -32,3 +32,23 @@
 .reclame_block_content a:hover {
 background-color: #4c4c4d;
 }
+
+/* news_btn новостные кнопки */
+
+.news_button {
+    padding: 0.5%; border-radius: 15px; color: rgb(197, 197, 197);
+}
+.news_button:hover {
+    color: rgb(255, 255, 255);
+}
+
+.news_button_active {
+    background-color: #2b2b2c;
+}
+
+/* Посмотреть как работает
+
+.news_button:active {
+    background-color: #2b2b2c;
+}
+*/
