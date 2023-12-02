@@ -1,49 +1,56 @@
-.hover_white_02 a {
-    text-decoration: none; color: white;
-}
-.hover_white_02 {
-    padding: 0.5%; 
-}
-.hover_white_02:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.bold {
+  font-weight: 700;
 }
 
+.hover_white_02 {
+  text-decoration: none;
+  color: white;
+}
+.hover_white_02 {
+  padding: 0.5%;
+}
+.hover_white_02:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
 
 /* search _ button поисковые кнопки */
 
 .search_btn:hover {
-    background-color: #236ce9;
+  background-color: #236ce9;
 }
 .search_block_info a:hover {
-    color: #3c80ef;
+  color: #3c80ef;
 }
 
-
 .reclame_block_content:hover {
-    color: #236ce9;
+  color: #236ce9;
 }
 
 .reclame_block_content a {
-    background-color: #3b3b3c;
-    padding: 0.5%; margin-left: 93%;
-    color: white; border-radius: 10px;
+  background-color: #3b3b3c;
+  padding: 0.5%;
+  margin-left: 93%;
+  color: white;
+  border-radius: 10px;
 }
 
 .reclame_block_content a:hover {
-background-color: #4c4c4d;
+  background-color: #4c4c4d;
 }
 
 /* news_btn новостные кнопки */
 
 .news_button {
-    padding: 0.5%; border-radius: 15px; color: rgb(197, 197, 197);
+  padding: 0.5%;
+  border-radius: 15px;
+  color: rgb(197, 197, 197);
 }
 .news_button:hover {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .news_button_active {
-    background-color: #2b2b2c;
+  background-color: #2b2b2c;
 }
 
 /* Посмотреть как работает
