@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="assets/image/icon/mail_ru_logo_icon_147267.ico" type="image/x-icon">
 
     <script src="js/index.js" defer></script>
+    <script src="js/news.js" defer></script>
 
     <link rel="stylesheet" href="css/index.css" />
     <link rel="stylesheet" href="css/hover.css">
@@ -25,31 +26,30 @@
     <!-- Главное меню - #01 -->
 
 
-    <header class="head_menu">
+    <nav class="head_menu">
       <div class="head_menu_main">
-        <b class="hover_white_02"><a href="#">Mail.ru</a></b>
-        <p class="hover_white_02"><a href="#">Почта</a></p>
-        <p class="hover_white_02"><a href="#">Облако</a></p>
-        <p class="hover_white_02"><a href="#">Одноклассники</a></p>
-        <p class="hover_white_02"><a href="#">Вконтакте</a></p>
-        <p class="hover_white_02"><a href="#">Новости</a></p>
-        <p class="hover_white_02"><a href="#">Знакомства</a></p>
-        <p class="hover_white_02"><a href="#">Игры</a></p>
-        <p class="hover_white_02">
-          <a href="#">Все проекты ■</a>
-        </p>
+          <a class="hover_white_02 bold" href="#">Mail.ru</a></b>
+          <a class="hover_white_02" href="#">Почта</a>
+          <a class="hover_white_02" href="#">Облако</a>
+          <a class="hover_white_02" href="#">Одноклассники</a>
+          <a class="hover_white_02" href="#">Вконтакте</a>
+          <a class="hover_white_02" href="#">Новости</a>
+          <a class="hover_white_02" href="#">Знакомства</a>
+          <a class="hover_white_02" href="#">Игры</a>
+          <a class="hover_white_02" href="#">Все проекты ■</a>
+        
       </div>
       <!-- 
         <div class="head_menu_optional">
         <p class="hover_white_02"><a href="#">почта@mail.ru</a></p>
       </div>
     -->
-    </header>
+  </nav>
 
 
     <!-- Главный контент - #02 -->
-    <main>
-      <!--  Меню боковое
+    <main class="main_container">
+ 
       <aside>
         <header>
           <div>
@@ -137,7 +137,9 @@
           <p><a href="https://help.mail.ru/">Помощь</a></p>
         </footer>
       </aside>
-        -->
+
+
+      <div class="main_container_content">
 
 
       <section class="search_block_main">
@@ -172,7 +174,7 @@
       <article class="reclame_block">
         <section class="reclame_block_content" id="banner_reclame">
          <div>
-           <img src="assets/image/cat_reklame.jpg" alt="Реклама кота.jpg" />
+           <img src="assets/image/cat_reklame.jpg" alt="Реклама кота" />
          </div>
          <div class="reclame_block_text">
            <h2>Рекламодатель</h2>
@@ -185,21 +187,23 @@
         <div class="one_main">
         <nav>
           <ul>
-            <li id="news">Новости</li>
-            <li id="spec">Спецоперация</li>
-            <li id="sport">Спорт</li>
-            <li id="girl">Леди</li>
-            <li id="car">Авто</li>
-            <li id="kino">Кино</li>
-            <li id="tech">Hi-Tech</li>
-            <li id="game">Игры</li>
-            <li id="focus">ВФокусе</li>
-            <li id="heal">Здоровье</li>
-            <li id="pet">Питомцы</li>
+            <li class="news_button news_button_active" id="news">Новости</li>
+            <li class="news_button" id="spec">Спецоперация</li>
+            <li class="news_button" id="sport">Спорт</li>
+            <li class="news_button" id="girl">Леди</li>
+            <li class="news_button" id="car">Авто</li>
+            <li class="news_button" id="kino">Кино</li>
+            <li class="news_button" id="tech">Hi-Tech</li>
+            <li class="news_button" id="game">Игры</li>
+            <li class="news_button" id="focus">ВФокусе</li>
+            <li class="news_button" id="heal">Здоровье</li>
+            <li class="news_button" id="pet">Питомцы</li>
           </ul>
         </nav>
+
+        <div class="container">
           <article>
-            <ul>
+            <ul id="news_content">
               <li>Полиция сообщила подробности смерти двоих россиян в Индии</li>
               <li>Финские пограничники применили газ на границе с Россией</li>
               <li>Войска Рф отпраздновали праздник</li>
@@ -216,10 +220,8 @@
               <li>Даниил Медведев кормит кроликов морковкой на пляже: видео</li>
             </ul>
           </article>
-          </div>
 
-
-          <aside>
+          <section class="container_news_aside">
             <section>
               <h3>Ярославль <span> → </span></h3>
               <p><img src="#" alt="ф" /> Слабый ветер</p>
@@ -246,16 +248,20 @@
                 </p>
               </div>
             </section>
-          </aside>
+          </section>
+          </div>
 
 
+        </div>
+
+          
       </section>
 
 
       <seciton>
         <!-- one_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
             <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
@@ -264,50 +270,53 @@
         </div>
         <!-- two_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
-            <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
+            <img src="assets/image/picaby.png" alt="Иконка Пикабу"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
           </p>
           <p>Кто сказал, что рыбалка это...</p>
         </div>
         <!-- three_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
-            <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
+            <img src="assets/image/picaby.png" alt="Иконка Пикабу"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
           </p>
           <p>Кто сказал, что рыбалка это...</p>
         </div>
         <!-- four_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
-            <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
+            <img src="assets/image/picaby.png" alt="Иконка Пикабу"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
           </p>
           <p>Кто сказал, что рыбалка это...</p>
         </div>
         <!-- five_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
-           <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
+           <img src="assets/image/picaby.png" alt="Иконка Пикабу"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
           </p>
           <p>Кто сказал, что рыбалка это...</p>
         </div>
         <!-- six_card -->
         <div>
-          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке.png" ></img>
+          <img src="assets/image/fish_girl.png" alt="Девушка на рыбалке" />
           <p>
-            <img src="assets/image/picaby.png" alt="Иконка Пикабу.png"> Пикабу☑
+            <img src="assets/image/picaby.png" alt="Иконка Пикабу"> Пикабу☑
            <span>2 месяца назад●715тыс подп</span> <br>
           </p>
           <p>Кто сказал, что рыбалка это...</p>
         </div>
 
+
+
+      </div>
       </seciton>
     </main>
 
