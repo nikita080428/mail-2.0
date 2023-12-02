@@ -21,6 +21,15 @@ a {
 .main_container {
   display: flex;
 }
+
+.main_container_content {
+  flex-grow: 1;
+}
+
+.aside_main {
+  position: sticky;
+}
+
 /*  */
 .head_menu {
   display: flex;
