@@ -20,14 +20,11 @@ a {
 /* main_container основной контейнер с двумя частями меню боковое и контент */
 .main_container {
   display: flex;
+  gap: 1%;
 }
 
 .main_container_content {
   flex-grow: 1;
-}
-
-.aside_main {
-  position: sticky;
 }
 
 /*  */
@@ -35,10 +32,11 @@ a {
   display: flex;
   width: 100%;
   background-color: black;
-  justify-content: space-around;
+  justify-content: center;
 }
 .head_menu_main {
   display: flex;
+  justify-content: center;
   gap: 1%;
   flex-grow: 1;
   font-size: 14px;
@@ -47,16 +45,38 @@ a {
   display: flex;
   align-items: center;
 }
+/* Доп.Меню aside */
+.aside_main {
+  position: fixed;
+  top: 0;
+}
+
+.aside_main .aside_header_icon {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.aside_header_icon_big_mail {
+  flex-basis: 100px;
+}
+.aside_header_icon_big_mail img {
+  width: 100%;
+}
+.aside_header_icon_pack img {
+  width: 25px;
+  height: 25px;
+}
 /* Поисковая строка  */
 .search_block_main {
   display: block;
   margin: 0 auto;
-  width: 100%;
+  width: 65%;
 }
 
 .search_block_input {
   display: flex;
   justify-content: center;
+  gap: 5%;
 }
 .search_input {
   width: 100%;
@@ -98,7 +118,8 @@ a {
   display: flex;
   align-items: center;
   background-color: #2a2a2b;
-  width: 100%;
+  width: 50%;
+  min-width: 40%;
   border-radius: 20px;
 }
 .reclame_block_content p {
@@ -148,6 +169,16 @@ a {
   display: flex;
   flex-direction: column;
   gap: 50px;
+}
+.container_news_aside_main {
+  background-color: #303030;
+  padding: 25%;
+  border-radius: 15px;
+}
+.container_news_aside_dop {
+  background-color: #303030;
+  padding: 25%;
+  border-radius: 15px;
 }
 
 /* Временные стили, для удобства */
