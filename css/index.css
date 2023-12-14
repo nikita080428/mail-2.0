@@ -168,17 +168,106 @@ a {
 .container_news_aside {
   display: flex;
   flex-direction: column;
+  flex-basis: 275px;
   gap: 50px;
 }
 .container_news_aside_main {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
   background-color: #303030;
-  padding: 25%;
+  padding: 10%;
   border-radius: 15px;
 }
 .container_news_aside_dop {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background-color: #303030;
-  padding: 25%;
+  padding: 10%;
   border-radius: 15px;
+  text-align: center;
+}
+.container_news_aside_dop img {
+  width: 25px;
+}
+
+.container_news_aside_main_flexbox_weather_base {
+  display: flex;
+}
+
+.container_news_aside_main_flexbox_weather {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container_news_aside_main_flexbox_weather_dop {
+  display: flex;
+  justify-content: space-around;
+}
+
+.float_big {
+  font-size: 20px;
+  color: white;
+  font-weight: 800;
+}
+.float_down {
+  font-size: 12px;
+  color: gray;
+}
+.container_news_aside_main_flexbox_region {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ikor {
+  background-color: #2a2a2b;
+  border-radius: 5px;
+  padding: 2%;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+.ikor a {
+  font-size: 50px;
+  color: white;
+}
+
+.ikor:hover {
+  background-color: #2775fc;
+}
+.ikor:active {
+  background-color: #003da7;
+}
+
+.off {
+  background-color: #2a2a2b;
+  border-radius: 5px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.off button {
+  font-size: 45px;
+  background-color: #2a2a2b;
+  border-radius: 5px;
+  border: none;
+  width: 90px;
+  height: 115px;
+  padding: 2%;
+}
+
+.off button:hover {
+  background-color: #2775fc;
+}
+.off button:active {
+  background-color: #003da7;
+}
+
+.off_Noactive {
+  background-color: white;
+  color: #19191a !important ;
 }
 
 /* Временные стили, для удобства */

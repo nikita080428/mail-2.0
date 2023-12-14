@@ -1,0 +1,36 @@
+.card_block {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+}
+.card {
+  border: solid 1px white;
+  border-radius: 15px;
+  flex-basis: 25%;
+}
+.card_block_main_img {
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.card_block_dop_img {
+  width: 30px;
+  height: auto;
+}
+
+.card_main {
+  display: flex;
+  align-items: center;
+}
+.card_footer {
+  font-size: 16px;
+  font-weight: 800;
+  color: white;
+  text-align: center;
+}
+.card_main_font_grey {
+  font-size: 14px;
+  color: gray;
+}
